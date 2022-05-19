@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Johnson Tan Portfolio</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="header_container">
+      <div class="logo_container">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <div class="nav_container">
+        <nav class="menu_container" id="menu">
+          <a class="home_link link">Home</a>
+          <a class="about_link link" >About</a>
+          <a class="skills_link link">Skills</a>
+          <a class="projects_link link">Projects</a>
+          <a class="link" href="https://www.linkedin.com/in/johnson-tan-a84552193/" id="contact_button">Contact</a>
+        </nav>
+      </div>
+      <div class="nav_container_mobile" onclick="menuControllerVisibility()">      
+        <a>Menu</a>
+        <img id="menu_arrow" src="images/down-arrow.png" alt="arrow">
+      </div>
+    </div>
+
+    <div class="menu_container_mobile">
+      <nav>
+        <a class="home_link link">Home</a>
+        <a class="about_link link" >About</a>
+        <a class="skills_link link">Skills</a>
+        <a class="projects_link link">Projects</a>
+        <a class="link" href="https://www.linkedin.com/in/johnson-tan-a84552193/" id="contact_button">Contact</a>
+      </nav>
+    </div>
+
+    <div class="content_container">
+      <div class="hero_container" id="home">
+        <div class="hero_text">
+          <h1>Hi I'm Johnson, an<br/>Agile Software Engineer</h1>
+          <a class="about_link link">
+            <p>Learn more about me</p>
+            <img src="images/down-arrow-2.png" alt="arrow">
+          </a>
+        </div>
+      </div>
+
+      <div class="about_container indented" id="about">
+        <h2>About</h2>
+        <div class="profile_container split_container">
+          <div class="profile_image_container">
+            <img src="images/profile.png" alt="image of me"/>
+          </div>
+          <div class="profile_description_container">
+            <p>Hello, my name is Johnson and I am a software engineer located in Vancouver, B.C. I received a Bachelor degree in Computer Science at Simon Fraser University. My interest includessoftware developent, data analysis and web design.</p>
+            <p>Previously I have interned at SAP as an agile developer. My main responsibilities included reviewing other developer's changes, writing automated tests, and fixing bugs for a web application.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills_container indented" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="slider_container">
+          <div class="languages_container" id="languages_container">
+              <div><img class="language" src="images/java.png" alt="java logo"/></div>
+              <div><img class="language" src="images/python.png" alt="python logo"/></div>
+              <div><img class="language" src="images/html.png" alt="html stack logo"/></div>
+              <div><img class="language" src="images/react.png" alt="react logo"/></div>
+              <div><img class="language" src="images/node.png" alt="nodejs logo"/></div>
+              <div><img class="language" src="images/mysql.png" alt="mysql logo"/></div>
+              <div><img class="language" src="images/django.png" alt="django logo"/></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects_container indented" id="projects">
+        <h2>Projects</h2>
+        <div class="projects_list">
+          <div class="project to_fade_in">
+            <div class="project_image_container">
+              <img src="images/profile.png" alt="image of me"/>
+            </div>
+            <div class="project_description_container">
+              <p class="project_name">Project 1</p>
+              <p class="project_languages">Language 1 Language 2 Language 3 Language 4</p>
+              <p class="project_description">I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.</p>
+            </div>
+            <button>View Details</button>
+          </div>
+          <div class="project to_fade_in">
+            <div class="project_image_container">
+              <img src="images/profile.png" alt="image of me"/>
+            </div>
+            <div class="project_description_container">
+              <p class="project_name">Project 1</p>
+              <p class="project_languages">Language 1 Language 2 Language 3 Language 4</p>
+              <p class="project_description">I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.</p>
+            </div>
+            <button>View Details</button>
+          </div>
+          <div class="project to_fade_in">
+            <div class="project_image_container">
+              <img src="images/profile.png" alt="image of me"/>
+            </div>
+            <div class="project_description_container">
+              <p class="project_name">Project 1</p>
+              <p class="project_languages">Language 1 Language 2 Language 3 Language 4</p>
+              <p class="project_description">I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.I am familiar with writinges.</p>
+            </div>
+            <button>View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- - removed section since github hosting only supports static pages with no servers
+        --- adding email is not secure and will likely result in too many spams
+      <div class="contact_container indented" id="contact">
+        <h2>Contact</h2>
+        <div class="form_container split_container">
+          <div class="form_content_container">
+            <form class="contact_form" action="" enctype="application/x-www-form-urlencoded">
+              <div class="input_group">
+                <label for="name">Name</label><br/><br/>
+                <textarea id="name"></textarea>
+              </div>
+              <div class="input_group">
+                <label for="email">Email</label><br/><br/>
+                <textarea id="email"></textarea>
+              </div>
+              <div class="input_group">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea><br/>
+              </div>
+              <input id="contact_submit" type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="form_image_container">
+            <img src="images/contact.png" alt="contact image"/>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="footer_container">
+      <div class="external_links split_container">
+        <a href="https://www.linkedin.com/in/johnson-tan-a84552193/">
+          <img src="images/linkedin.png"/>
+        </a>
+        <a href="https://github.com/Jtan99">
+          <img src="images/github.png"/>
+        </a>
+      </div> 
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="javascript/languages-scroll.js"></script>
+</html>
