@@ -214,10 +214,11 @@ p, label{
   }
   button {
     float: right;
+    padding: 5px 10px;
+    border: none;
     background-color: $button_green;
     color: $primary-white;
-    border: none;
-    padding: 5px 10px;
+    cursor: pointer;
   }
 }
 
@@ -247,6 +248,9 @@ p, label{
   position: relative;
   height: ($projects-height * 0.5);
   overflow: hidden;
+  img{
+    height: inherit;
+  }
 }
 
 .project_description_container {
@@ -297,10 +301,11 @@ p, label{
 
 .footer_container {
   background-color: $theme-bg-color;
+  padding: 0 $padding-hoizontal/2;
   .external_links {
+    display: flex;
     background-color: inherit;
     justify-content: flex-end;
-    padding: 0 $padding-hoizontal/2;
     // gap: 0 $padding-hoizontal/2;
     img {
       width: 75%;

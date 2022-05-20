@@ -262,10 +262,11 @@ p, label {
 
 .project button {
   float: right;
+  padding: 5px 10px;
+  border: none;
   background-color: #56B251;
   color: white;
-  border: none;
-  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .to_fade_in {
@@ -306,6 +307,10 @@ p, label {
   position: relative;
   height: 250px;
   overflow: hidden;
+}
+
+.project_image_container img {
+  height: inherit;
 }
 
 .project_description_container {
@@ -367,14 +372,17 @@ p, label {
 
 .footer_container {
   background-color: #E6DDF3;
+  padding: 0 17.5px;
 }
 
 .footer_container .external_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: inherit;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0 17.5px;
 }
 
 .footer_container .external_links img {
