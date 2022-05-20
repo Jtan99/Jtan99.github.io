@@ -56,6 +56,10 @@ p, label {
   cursor: pointer;
 }
 
+.nav_container_mobile a {
+  padding-right: 10px;
+}
+
 .menu_container_mobile {
   display: none;
   position: -webkit-sticky;
@@ -85,9 +89,9 @@ p, label {
   border-bottom: 1px solid #6944D8;
 }
 
-.flip {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+.rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .content_container {

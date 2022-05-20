@@ -62,6 +62,9 @@ p, label{
   display: none;
   align-items: baseline;
   cursor: pointer;
+  a {
+    padding-right: 10px;
+  }
 }
 
 .menu_container_mobile {
@@ -90,8 +93,8 @@ p, label{
   }
 }
 
-.flip {
-  transform: rotate(-180deg);
+.rotate {
+  transform: rotate(90deg);
 }
 
 

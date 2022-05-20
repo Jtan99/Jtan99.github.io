@@ -63,14 +63,14 @@ function checkElementLocation() {
 $(window).resize(function() {
   if(window.innerWidth>999){
     $(".menu_container_mobile").hide();
-    $("#menu_arrow").removeClass('flip');
+    $("#menu_arrow").removeClass('rotate');
   }
 })
 
 function menuControllerVisibility() {
   var menu = $(".menu_container_mobile");
   var menu_arrow = $("#menu_arrow");
-  menu_arrow.toggleClass('flip');
+  menu_arrow.toggleClass('rotate');
   if(menu.is(':visible')){
     menu.hide();
   }else{
