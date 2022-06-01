@@ -1,0 +1,105 @@
+.projects_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 25px 35px;
+}
+
+.project {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 224px;
+          flex: 1 1 224px;
+  min-width: 224px;
+  max-width: 448px;
+  padding: 12.5px;
+  height: inherit;
+  border: 1px solid black;
+  position: relative;
+  background-color: #E6DDF3;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.project img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.project .project_name {
+  font-weight: 600;
+}
+
+.project .project_languages {
+  color: #808080;
+}
+
+.project button {
+  float: right;
+  padding: 5px 10px;
+  border: none;
+  background-color: #56B251;
+  color: white;
+  cursor: pointer;
+}
+
+.to_fade_in {
+  opacity: 0;
+}
+
+.to_fade_in.fade-in {
+  -webkit-animation: fade-in 3s forwards;
+          animation: fade-in 3s forwards;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #E6DDF380;
+}
+
+.project_image_container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.project_image_container img {
+  height: inherit;
+}
+
+.project_description_container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+/*# sourceMappingURL=projects.css.map */

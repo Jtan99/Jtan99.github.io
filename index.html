@@ -4,7 +4,8 @@
     <title>Johnson Tan Portfolio</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/header/header.css"/>
   </head>
   <body>
     <div class="header_container">
@@ -78,18 +79,18 @@
       <div class="projects_container indented" id="projects">
         <h2>Projects</h2>
         <div class="projects_list">
-          <div class="project to_fade_in">
+          <div class="project to_fade_in" onclick="window.location= 'https://github.com/Jtan99/SocialScene'">
             <div class="project_image_container">
               <img src="images/social_scene.png" alt="image of me"/>
             </div>
             <div class="project_description_container">
               <p class="Social Scene">Social Scene Website</p>
               <p class="project_languages">HTML, CSS, Javascript, Nodejs</p>
-              <p class="project_description">A website for people to rate, share, and discuss about their favourite movies. Database is updated automatically, with new movies information retrieved from an API.</p>
+              <p class="project_description">A website for people to rate, share, and discuss about their favourite movies. Movies and reviews are retrieved from API and combined with our site's private database. Website supports additional features such as bookmark and customized recommendations.</p>
             </div>
-            <button>View Details</button>
+            <button>View Code</button>
           </div>
-          <div class="project to_fade_in">
+          <div class="project to_fade_in" onclick="window.location= 'https://github.com/Jtan99/Playstore_Analysis'">
             <div class="project_image_container">
               <img src="images/playstore_analysis.png" alt="image of me"/>
             </div>
@@ -98,18 +99,18 @@
               <p class="project_languages">Python, Scipy</p>
               <p class="project_description">Market analysis of the mobile gaming industry using data obtained from multiple open sources. Built charts and graphs for better visiualization and reported all discoveries in a detailed final report. </p>
             </div>
-            <button>View Details</button>
+            <button>View Code</button>
           </div>
-          <div class="project to_fade_in">
+          <div class="project to_fade_in" onclick="window.location= 'https://github.com/Jtan99/EstatesWebsite'">
             <div class="project_image_container">
               <img src="images/chindians.png" alt="image of me"/>
             </div>
             <div class="project_description_container">
               <p class="project_name">Chindians</p>
               <p class="project_languages">HTML, CSS, Javascript, Nodejs, Docker, Nginx</p>
-              <p class="project_description">Simple website for people to list properties that are up for sale or rent. Using google maps api to validate and auto fill address.</p>
+              <p class="project_description">Simple website to list properties that are up for sale or rent. Site uses google maps api to validate and auto fill address.</p>
             </div>
-            <button>View Details</button>
+            <button>View Code</button>
           </div>
         </div>
       </div>
@@ -157,4 +158,6 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="javascript/languages-scroll.js"></script>
+  <link rel="stylesheet" href="./css/footer/footer.css"/>
+  <link rel="stylesheet" href="./css/projects/projects.css"/>
 </html>

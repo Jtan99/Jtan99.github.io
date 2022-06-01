@@ -1,0 +1,31 @@
+.footer_container {
+  background-color: #E6DDF3;
+  padding: 0 17.5px;
+}
+
+.footer_container .external_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: inherit;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer_container .external_links img {
+  width: 75%;
+}
+
+.footer_container .external_links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 8.75px;
+  padding: 12.5px 0;
+  font-size: 18px;
+}
+/*# sourceMappingURL=footer.css.map */

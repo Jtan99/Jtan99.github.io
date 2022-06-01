@@ -1,0 +1,81 @@
+@import "../utilities/variables.scss";
+
+.projects_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: $padding-vertical $padding-hoizontal;
+}
+
+.project {
+  flex: 1 1 ($max-resolution*0.7/6);
+  min-width: $max-resolution*0.7/6;
+  max-width: $max-resolution*0.7/3;
+  padding: $padding-vertical/2;
+  height: inherit;
+  border: 1px solid $regular-text-colour;
+  position: relative;
+  background-color: $theme-bg-color;
+  transition: transform .2s;
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+  .project_name{
+    font-weight: 600;
+  }
+  .project_languages{
+    color: $grey-text-colour;
+  }
+  button {
+    float: right;
+    padding: 5px 10px;
+    border: none;
+    background-color: $button_green;
+    color: $primary-white;
+    cursor: pointer;
+  }
+}
+
+.to_fade_in {
+  opacity: 0;
+  &.fade-in {
+    animation: fade-in 3s forwards;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: $theme-bg-color-opacity;
+}
+
+.project_image_container {
+  position: relative;
+  height: ($projects-height * 0.5);
+  overflow: hidden;
+  img{
+    height: inherit;
+  }
+}
+
+.project_description_container {
+  position: relative;
+  height: ($projects-height * 0.5);
+  overflow: hidden;
+}

@@ -1,0 +1,236 @@
+html body {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #F8F8F8;
+}
+
+p, label {
+  font-size: 18px;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content_container {
+  padding: 12.5px 0;
+}
+
+.split_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+}
+
+.hero_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 750px;
+  width: 100%;
+  background: url("../images/hero-background.png") no-repeat center;
+  background-size: cover;
+}
+
+.hero_container .hero_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-animation: slide-in 250ms cubic-bezier(0.36, 0.37, 0.55, 1.5) forwards;
+          animation: slide-in 250ms cubic-bezier(0.36, 0.37, 0.55, 1.5) forwards;
+}
+
+.hero_container .hero_text h1 {
+  color: #6944D8;
+  font-size: 42px;
+  padding: 0;
+}
+
+.hero_container .hero_text p {
+  background-color: inherit;
+  color: #1a85d9;
+  font-weight: bold;
+  margin: 0;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .hero_container {
+    background: url("../images/hero-background2.png") no-repeat center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 550px;
+  }
+}
+
+.profile_container {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+}
+
+.profile_container .profile_description_container {
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .profile_container > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  .profile_container .profile_description_container {
+    width: 80%;
+  }
+}
+
+.skills_container.slider_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.languages_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.languages_container > div {
+  background-color: inherit;
+  height: 100px;
+}
+
+.languages_container img {
+  padding: 0 17.5px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.form_container .form_content_container,
+.form_container .form_image_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  max-height: 400px;
+  padding: 12.5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_container .contact_form .input_group {
+  padding-bottom: 5%;
+}
+
+.form_container .contact_form .input_group textarea {
+  width: 100%;
+}
+
+.form_container .contact_form #message {
+  height: 76px;
+}
+
+.form_container .contact_form #contact_submit {
+  float: right;
+}
+
+.form_container .form_image_container {
+  overflow: hidden;
+}
+
+.form_container .form_image_container img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (min-width: 551px) {
+  .indented {
+    margin: 0 35px;
+    padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .indented {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .indented {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
