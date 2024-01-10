@@ -6,7 +6,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<RedirectPortfolio />} />
+        <Route path="/Home" element={<Home />} />
         <Route path='/Portfolio' element={<RedirectPortfolio/>}/>
       </Routes>
     </Router>
@@ -16,7 +17,7 @@ function App() {
 export default App;
 
 const Home = () => {
-  return <div>Home</div>;
+  return <div>Currently blank</div>;
 }
 
 const RedirectPortfolio = () => {
