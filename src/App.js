@@ -1,16 +1,16 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<RedirectPortfolio />} />
         <Route path="/Home" element={<Home />} />
         <Route path='/Portfolio' element={<RedirectPortfolio/>}/>
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
